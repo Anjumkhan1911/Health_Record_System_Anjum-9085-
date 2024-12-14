@@ -1,0 +1,48 @@
+.health-charts {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #007bff;
+  }
+  
+  .charts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .chart-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .chart-card h3 {
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .chart-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .chart-card p {
+    color: #555;
+  }
+  
+  p {
+    text-align: center;
+    color: #777;
+  }
+  

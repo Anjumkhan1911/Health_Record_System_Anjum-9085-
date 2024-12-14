@@ -1,0 +1,186 @@
+/* General Dashboard Styling */
+.doctor-dashboard {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Header Styling */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0056b3; /* Changed header background color */
+  border-radius: 5px;
+  color: white;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #fffcf4; /* Changed title color to make it stand out */
+}
+
+.logout-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #e60000;
+}
+
+/* Section Styling */
+.patients-section,
+.new-ops-section {
+  margin-top: 20px;
+}
+
+.patients-table,
+.ops-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  text-align: left;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.patients-table th,
+.ops-table th,
+.patients-table td,
+.ops-table td {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+}
+
+.patients-table th,
+.ops-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.patients-table tr:hover,
+.ops-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.header-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: #00b38c;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.header-link:hover {
+  background-color: #a49815;
+}
+
+/* Buttons in New Outpatients Table */
+.accept-btn,
+.reject-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.accept-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.accept-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.reject-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.reject-btn:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Status Column Styling */
+.ops-table td:last-child {
+  font-weight: bold;
+  text-align: center;
+}
+
+.ops-table td:last-child:before {
+  content: "Status: ";
+  font-weight: normal;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .patients-table,
+  .ops-table {
+    font-size: 14px;
+  }
+
+  .accept-btn,
+  .reject-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+.appointments-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+}
+
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.appointments-table th,
+.appointments-table td {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.appointments-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.appointments-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.appointments-table tr:hover {
+  background-color: #f1f1f1;
+}

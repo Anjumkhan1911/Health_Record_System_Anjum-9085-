@@ -1,0 +1,99 @@
+/* General styles for the patient dashboard */
+.patient-dashboard {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+  }
+  
+  .dashboard-header h1 {
+    margin: 0;
+  }
+  
+  .logout-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    background-color: #cc0000;
+  }
+  
+  .data-section {
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .data-section h2 {
+    margin-top: 0;
+    color: #007bff;
+  }
+  
+  .data-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .data-section li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .data-section li:last-child {
+    border-bottom: none;
+  }
+  
+  .patient-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    margin: 10px auto 0;
+    text-align: center;
+  }
+  
+  .patient-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .dashboard-header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .logout-button {
+      margin-top: 10px;
+    }
+  
+    .data-section {
+      margin-top: 15px;
+    }
+  
+    .patient-button {
+      font-size: 0.9rem;
+    }
+  }
+  
